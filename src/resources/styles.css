@@ -230,8 +230,6 @@ coach
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    
-
 }
 
 .coach_div{
@@ -245,15 +243,41 @@ coach
     width: 33%;
     padding: 20px;
     box-sizing: border-box;
+    transform-style: preserve-3d;
+    transition: transform .8s;
 
 }
-
+.coach_div:hover{
+    transform: rotateY(180deg);
+}
+.coach_front, .coach_back{
+    backface-visibility: hidden;
+}
+.coach_front{
+    background-color: aqua;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.coach_back{
+    height: 60%;
+    background: grey;
+    color: white;
+    transform:rotateY(180deg);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .coach_box{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 300px;
+    height: 30%;
 }
+
 .coach_name{
     font-size: 25px;
 }

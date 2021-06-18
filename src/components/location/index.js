@@ -15,7 +15,7 @@ const Location = () => (
 
 
         <div className="location_tag">
-            <div>Location</div>
+            <a href="https://goo.gl/maps/WMkYKv2AAzsQcnMR7">Location</a>
         </div>
 
     </div>
